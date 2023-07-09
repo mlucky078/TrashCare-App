@@ -1,0 +1,46 @@
+.tb {
+    -fx-textcolor: #ffffff00;
+}
+
+
+
+/* FileChooser fileChooser = new FileChooser();
+fileChooser.setTitle("Simpan Data Sampah");
+fileChooser.getExtensionFilters().add(
+        new FileChooser.ExtensionFilter("XML Files", "*.xml")
+);
+
+File file = fileChooser.showSaveDialog(TV1.getScene().getWindow());
+if (file != null) {
+    try {
+        FileWriter fileWriter = new FileWriter(file);
+        XStream xStream = new XStream();
+        xStream.alias("DataSampah", DataSampah.class);
+        xStream.toXML(TV1.getItems(), fileWriter);
+        fileWriter.close();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+} */
+
+
+/* hitung jenis sampah terbanyak yang terjual ( colJenisSampah)  yang ada di dataPenjualan kemudian tampilkan di label TotalOrderHome dan ketika ada data baru auto terupdate */
+
+/* // Add listener to jenisSampahP ComboBox
+jenisSampahP.valueProperty().addListener((observable, oldValue, newValue) -> {
+    if (newValue != null) {
+        HargaP.setText(String.valueOf(newValue.getHarga()));
+        StokP.clear();
+        TotalP.setText(String.valueOf(newValue.getTotal()));
+    }
+});
+
+// Add listener to StokP text field
+StokP.textProperty().addListener((observable, oldValue, newValue) -> {
+    if (newValue != null && !newValue.isEmpty()) {
+        int jumlah = Integer.parseInt(newValue);
+        double harga = Double.parseDouble(HargaP.getText());
+        double total = jumlah * harga;
+        TotalP.setText(String.valueOf(total));
+    }
+}); */

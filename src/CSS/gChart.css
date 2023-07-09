@@ -1,0 +1,17 @@
+.chart {
+    -fx-background-color: transparent; /* Warna background */
+    -fx-border-width: 0; /* Menghilangkan border */
+    -fx-padding: 0; /* Menghilangkan padding */
+}
+
+.chart-content {
+    -fx-padding: 0; /* Menghilangkan padding */
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke-width: 0; /* Menghilangkan garis horisontal */
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke-width: 0; /* Menghilangkan garis vertikal */
+}

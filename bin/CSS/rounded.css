@@ -1,0 +1,82 @@
+.back {
+-fx-background-size: 1200 900;
+-fx-background-radius: 12;
+-fx-border-radius: 12;
+-fx-border-width:5;
+-fx-border-color: transparent;
+}   
+
+
+/* 
+@FXML
+void handleJual(ActionEvent event) {
+
+  System.out.println("Before reading XML");
+
+// Read XML and deserialize
+MenuController.dataPenjualanList = FXCollections.observableArrayList(); // Deklarasi dan inisialisasi ObservableList
+MenuController.dataPenjualanList.addAll(XML.<DataPenjualan>readXML("data_penjualan.xml", DataPenjualan.class));
+System.out.println("After reading XML. DataPenjualanList: " + MenuController.dataPenjualanList);
+
+MenuController.dataSampahList = XML.<DataSampah>readXML("data_sampah.xml", DataSampah.class);
+
+DataSampah selectedSampah = jenisSampahP.getValue();
+LocalDate tanggal = TglP.getValue();
+String pengepul = pengepulP.getText();
+int jumlah = Integer.parseInt(StokP.getText());
+double harga = Double.parseDouble(HargaP.getText());
+double total = jumlah * harga;
+
+// Alert
+Alert confirmationDialog = new Alert(Alert.AlertType.CONFIRMATION);
+confirmationDialog.setTitle("Konfirmasi");
+confirmationDialog.setHeaderText("Konfirmasi Penjualan");
+confirmationDialog.setContentText("Apakah Anda yakin ingin menjual sampah ini?");
+
+confirmationDialog.getButtonTypes().setAll(ButtonType.YES, ButtonType.NO);
+ButtonType userChoice = confirmationDialog.showAndWait().orElse(ButtonType.NO);
+
+if (userChoice == ButtonType.YES) {
+    DataPenjualan dataPenjualan = new DataPenjualan(selectedSampah, tanggal, pengepul, jumlah, harga, total);
+    MenuController.dataPenjualanList.add(dataPenjualan);
+
+    updateDataSampahStok(selectedSampah, jumlah);
+
+    // Clear input
+    jenisSampahP.getSelectionModel().clearSelection();
+    TglP.setValue(null);
+    pengepulP.clear();
+    StokP.clear();
+    HargaP.clear();
+    TotalP.clear();
+
+    // Memperbarui TableView dengan data terbaru
+    TV11.setItems(MenuController.dataPenjualanList);
+    TV11.refresh();
+
+    TV4.setItems(MenuController.dataPenjualanList);
+    TV4.refresh();
+
+    TV1.setItems(MenuController.dataSampahList);
+    TV1.refresh();
+
+    XML.<DataPenjualan>writeXML("data_penjualan.xml", MenuController.dataPenjualanList);
+    XML.<DataSampah>writeXML("data_sampah.xml", dataSampahList);
+} else {
+    // Penjualan dibatalkan
+}
+
+updateBarChart();
+updateLineChart();
+}
+
+
+// Metode untuk mengupdate/menambahkan stok di objek DataSampah
+private void updateDataSampahStok(DataSampah selectedSampah, int jumlah) {
+for (DataSampah dataSampah : dataSampahList) {
+    if (dataSampah.getJenisSampah().equals(selectedSampah.getJenisSampah())) {
+        dataSampah.tambahStok(jumlah);
+        break;
+    }
+}
+} */

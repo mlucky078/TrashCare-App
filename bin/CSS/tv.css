@@ -1,0 +1,39 @@
+.table-view {
+    -fx-table-cell-border-color: transparent;
+    -fx-background-color: #fff;
+}
+
+.table-row-cell {
+    -fx-background-color: #3F736F;
+    -fx-font-size: 14px; /* Ukuran font untuk isi kolom */
+    -fx-font-smoothing-type: lcd; /* Ketajaman font */
+}
+
+
+.table-row-cell:selected {
+    -fx-background-color: #508B89;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #3F736F;
+}
+
+.table-view .column-header {
+    -fx-background-color: #3F736F;
+    -fx-text-fill: white;
+    -fx-font-size: 16px; /* Ukuran font untuk judul kolom */
+    -fx-font-smoothing-type: lcd; /* Ketajaman font */
+}
+
+.table-view .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-visibility: hidden;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: white;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}

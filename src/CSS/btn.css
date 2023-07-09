@@ -1,0 +1,13 @@
+/* CSS untuk Hover Button */
+.button {
+    -fx-background-color: #3F736F; /* Warna latar tombol */
+   
+}
+
+.button:hover {
+    -fx-background-color: black; /* Warna latar tombol saat dihover */
+}
+
+.button:pressed {
+    -fx-background-color: #3F736F; /* Warna latar tombol saat ditekan */
+}

@@ -1,0 +1,33 @@
+/* CSS untuk Bar Chart */
+.chart-bar {
+    -fx-bar-fill: #3F736F; /* Warna bar */
+    -fx-border-color: transparent; /* Warna border */
+}
+
+.chart-bar:hover {
+    -fx-bar-fill: #FCB859; /* Warna bar saat dihover */
+}
+
+.chart-bar:selected {
+    -fx-bar-fill: #FCB859; /* Warna bar terpilih */
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: transparent; /* Menghilangkan garis horisontal */
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent; /* Menghilangkan garis vertikal */
+}
+
+.chart-legend {
+    -fx-background-color: transparent; /* Warna background legenda */
+}
+
+.chart-legend-item-symbol {
+    -fx-bar-fill: #3F736F; /* Warna legenda */
+}
+
+.chart-legend-item-symbol:selected {
+    -fx-bar-fill: #3F736F; /* Warna legenda terpilih */
+}

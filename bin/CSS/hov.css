@@ -1,0 +1,16 @@
+.label-menu {
+    /* Gaya default untuk label menu */
+    -fx-text-fill: #87888c;
+}
+
+.label-menu:hover {
+    /* Gaya saat hover */
+    -fx-text-fill:  #3F736F;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.label-menu:selected {
+    /* Gaya saat dipilih */
+    -fx-text-fill:  #3F736F;
+}
